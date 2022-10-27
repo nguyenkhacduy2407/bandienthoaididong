@@ -31,7 +31,7 @@ function AllComment(props) {
       dispatch(repCommentProduct(id, comment));
       setRepValue("");
       setRepCmt({ key: "", status: false });
-    } else alert("Đăng nhập đi bạn eiii");
+    } else alert("Đăng nhập ");
   };
 
   const PinComment = (comment) => {

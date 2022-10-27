@@ -5,7 +5,7 @@ import {handlePercentDiscount} from '../../../untils/index'
 import { useDispatch } from 'react-redux';
 
 
-function Iphone(props) {
+function Asus(props) {
     const dispatch = useDispatch()
     const [name, setName] = useState('asus');
     const [hotAsus, setHotAsus] = useState([])

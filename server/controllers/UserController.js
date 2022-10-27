@@ -44,7 +44,7 @@ export const login = expressAsyncHandler(async (req, res) => {
             token: generateToken(user),
         });
     }else{
-        res.status(401).send({message: "invalid email or password"})
+        res.status(401).send({message: "Email hoặc mật khẩu không hợp lệ"})
     }
 })
 
@@ -53,8 +53,8 @@ export const DeleteUser = expressAsyncHandler(async (req, res) => {
 
     if(user){
         await user.remove()
-        res.send({message: 'user deleted'})
+        res.send({message: 'người dùng đã bị xóa'})
     }else{
-        res.send({message: 'user not exists'})
+        res.send({message: 'người dùng không tồn tại'})
     }
 })

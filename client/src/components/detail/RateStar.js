@@ -90,7 +90,7 @@ function RateStar(props) {
                         {
                             existsUser ? '' : (
                         <Col span={7} style={{display:'flex', alignItems:'center', justifyContent:'center', flexDirection:'column'}}>
-                            <button className='guidanhgia' onClick={() => {userInfo ? setShowRate(true) : alert('Đăng nhập đi bạn eii')}}> Gửi đánh giá </button>
+                            <button className='guidanhgia' onClick={() => {userInfo ? setShowRate(true) : alert('Đăng nhập ')}}> Gửi đánh giá </button>
                         </Col>)
                         }
                     </Row>

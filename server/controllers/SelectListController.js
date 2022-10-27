@@ -39,7 +39,7 @@ export const getSelectOptionById = expressAsyncHandler(async (req, res) => {
   if (UpdateSelect) {
     res.send(UpdateSelect);
   } else {
-    res.send({ message: "no select " });
+    res.send({ message: "không chọn " });
   }
 });
 
@@ -47,5 +47,5 @@ export const deleteSelectOption = expressAsyncHandler(async (req, res) => {
   const UpdateSelect = await SelectListModel.findById({ _id: req.params.id });
   await UpdateSelect.remove();
 
-  res.send({ msg: "deleted select" });
+  res.send({ msg: "đã xóa lựa chọn" });
 });

@@ -6,10 +6,10 @@ import {data} from '../data.js'
 
 export const getAllProduct = expressAsyncHandler(async (req, res) => {
  // await ProductModel.remove()
-  const product = await ProductModel.insertMany(data.products)
-  ProductModel.find()
-      .then(product => res.send(product))
-      .catch(err => console.log(err))
+  //const product = await ProductModel.insertMany(data.products)
+  //ProductModel.find()
+    //  .then(product => res.send(product))
+      //.catch(err => console.log(err))
     const products = await ProductModel.find({})
     res.send(products)
 })

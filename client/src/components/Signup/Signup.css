@@ -21,8 +21,8 @@
     font-size: 15px;
 }
 .signup-page input[type="submit"] {
-    background: #d70018;
-    color: white;
+    background: #c3dfe2;
+    color: rgb(61, 40, 197);
     max-width: 250px;
 
     cursor: pointer;

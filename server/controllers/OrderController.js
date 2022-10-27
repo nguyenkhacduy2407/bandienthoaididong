@@ -95,22 +95,22 @@ export const updateOrder = expressAsyncHandler(async (req, res) => {
     res.send(updateOrder);
 
     // try {
-    //   const { data } = await axios.post(
-    //     "https://dev-online-gateway.ghn.vn/shiip/public-api/v2/shipping-order/create",
-    //     orderGhn,
-    //     {
-    //       headers: {
-    //         shop_id: process.env.SHOP_ID,
-    //         Token: process.env.TOKEN_GHN,
-    //       },
-    //     }
-    //   );
+      // const { data } = await axios.post(
+        // "https://dev-online-gateway.ghn.vn/shiip/public-api/v2/shipping-order/create",
+        // orderGhn,
+        // {
+          // headers: {
+            // shop_id: process.env.SHOP_ID,
+            // Token: process.env.TOKEN_GHN,
+          // },
+        // }
+      // );
 
-    //   const order_code = data.data.order_code;
+      // const order_code = data.data.order_code;
 
-    //   updateOrder.order_code = order_code;
-    //   await updateOrder.save();
-    //   res.send(updateOrder);
+      // updateOrder.order_code = order_code;
+      // await updateOrder.save();
+      // res.send(updateOrder);
     // } catch (error) {
     // }
   } else {
@@ -158,7 +158,7 @@ export const PrintOrderGhn = expressAsyncHandler(async (req, res) => {
 
 
 export const GetAllOrder = expressAsyncHandler(async (req, res) => {
-  //await OrderModel.remove()
+//  await OrderModel.remove()
   const Order = await OrderModel.find({}).sort({ createdAt: -1 });
   if (Order) {
     res.send(Order);

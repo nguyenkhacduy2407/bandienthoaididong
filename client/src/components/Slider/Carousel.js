@@ -93,19 +93,16 @@ function Carousel(props) {
                      >
               
               <div>
-                TRỢ GIÁ MÙA DỊCH <br></br> Ưu đãi vô địch
+                TRỢ GIÁ SINH VIÊN KHÓA MỚI <br></br> ƯU ĐÃI HẤP DẪN
               </div>
               <div>
-                NOTE 20 ULTRA 5G  <br></br>  Hotsale giảm sập sàn
+                IPHONE 14  <br></br>  Hotsale GIẢM GIÁ SÓC
               </div>
               <div>
-              XR CHÍNH HÃNG  <br></br>  Giá mới cực tốt
+             14 CHÍNH HÃNG  <br></br>  Giá mới cực tốt
               </div>
               <div>
-              APPLE WATCH SE  <br></br>  Mua đi chờ chi
-              </div>
-              <div>
-              ĐẠI TIỆC ÂM THANH   <br></br>   Loa sale bung nóc
+              APPLE WATCH SR  <br></br>NHANH TAY MUA NÀO
               </div>
 
             </Slider>
