@@ -12,6 +12,7 @@ function Login(props) {
 
     const { register, handleSubmit, watch, formState: { errors } } = useForm()
     const onSubmit = data => {
+      
         if(password === confirmPassword) {
             dispatch(SignupUser(data))            
         } else{
@@ -35,7 +36,9 @@ function Login(props) {
             placeholder="Password"
             type="password"
             onChange={(e) => setPassword(e.target.value)}
+            
             required
+            
           ></input>
           <input
             {...register("repeat password")}

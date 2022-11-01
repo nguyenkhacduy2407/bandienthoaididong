@@ -19,7 +19,7 @@ export default function ReviewProduct() {
     if (editorRef.current) {
       const blogContent = String(editorRef.current.getContent());
       dispatch(BlogProduct(id, { blogContent }, () => {
-        alert('Add review product success');
+        alert('Thêm sản phẩm đánh giá thành công');
       }));
     }
   };

@@ -12,7 +12,7 @@ export const generateToken = (user) => {
       address: user.address,
       isAdmin: user.isAdmin,
     },
-    process.env.TOKEN_SECRET || "Nguyen Khac Duy",
+    process.env.TOKEN_SECRET || "caokhahieu",
     {
       expiresIn: "30d",
     }

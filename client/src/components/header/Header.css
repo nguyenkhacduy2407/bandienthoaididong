@@ -83,9 +83,10 @@
     position: relative;
  }
 .search form input {
-   padding: .3rem 1rem;
+   padding: .8rem 1rem;
    outline: none;
-   border: none;
+   border: 0px none;
+   border: 1px solid #fff;
    width: 100%;
 }
 .search form span {

@@ -66,11 +66,12 @@ function Header(props) {
             <Link to="/"> Trang Chủ </Link>
           </li>
           <li>
-            <Link to="/product"> Điện Thoại </Link>
+            <Link to="/product"> Điện Thoại   </Link>
           </li>
           <li>
-            <Link to="/iphone"> Sản Phẩm </Link>
+            <Link to="/product"> LopTop  </Link>
           </li>
+        
           {userInfo ? (
             <li onClick={() => setShowAccount2(!showAccount2)}>
               <Link>

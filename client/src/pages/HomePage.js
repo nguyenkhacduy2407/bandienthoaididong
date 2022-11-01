@@ -20,6 +20,7 @@ function HomePage(props) {
             <Samsung></Samsung>
             <Xiaomi></Xiaomi>
             <Footer></Footer>
+           
             <ScrollToTop></ScrollToTop>
             {
                userInfo && userInfo.isAdmin === false ? (<AppChat></AppChat>) : ""

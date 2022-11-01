@@ -13,9 +13,9 @@ function AdminUser(props) {
     }, [dispatch])
     return (
         <div className="admin-user">
-            <span>Tài Khoản KH</span>
+            <span>Tài Khoản Người Dùng</span>
             {
-                users ? (<ListUser users={users}></ListUser>) : (<h2> Loading</h2>)
+                users ? (<ListUser users={users}></ListUser>) : (<h2> Đang Tải</h2>)
             }
         </div>
     );

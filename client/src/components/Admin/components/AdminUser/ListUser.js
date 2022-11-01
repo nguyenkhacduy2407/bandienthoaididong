@@ -12,8 +12,7 @@ function ListUser(props) {
                     <th></th>
                     <th>Tên</th>
                     <th>Email</th>
-                    <th>Địa Chỉ</th>
-                    <th>Phone</th>
+                
                 </tr>
                 {
                     users.map((item, index) => (<User user={item} number={index}></User>))

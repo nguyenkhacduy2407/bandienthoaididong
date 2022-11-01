@@ -5,10 +5,10 @@ import cloudinary from 'cloudinary'
 import {data} from '../data.js'
 
 export const getAllProduct = expressAsyncHandler(async (req, res) => {
- // await ProductModel.remove()
-  //const product = await ProductModel.insertMany(data.products)
-  //ProductModel.find()
-    //  .then(product => res.send(product))
+  //await ProductModel.remove()
+ const product = await ProductModel.insertMany(data.products)
+  ProductModel.find()
+      .then(product => res.send(product))
       //.catch(err => console.log(err))
     const products = await ProductModel.find({})
     res.send(products)
@@ -25,9 +25,9 @@ export const findProductById = expressAsyncHandler(async (req, res) => {
 })
 
 export const filterProductByType =  expressAsyncHandler(async (req, res) => {
-    // ProductModel.find({type: req.params.type})
-    //     .then(product => res.send(product))
-    //     .catch(err => console.log(err))
+    ProductModel.find({type: req.params.type})
+        .then(product => res.send(product))
+        .catch(err => console.log(err))
 
     const filterProductByType = await ProductModel.find({type: req.params.type}).limit(5)
     res.send(filterProductByType)

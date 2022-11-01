@@ -11,7 +11,7 @@
 }
 
 .footer{
-    width: 80%;
+    width: 90%;
     margin: auto;
     color: white;
 }
@@ -35,7 +35,7 @@
 
 .footer-top-name h2{
     font-size: 26px;
-    color: #333;
+    color:#1b4b5e;
     padding: 1rem 0;
     text-transform: uppercase;
     width: 150px;
@@ -55,12 +55,12 @@
 .footer-top-sp p{
     margin: 0;
     padding: .5rem 0;
-    color: #152fb0;
+    color: #050608;
     font-weight: 500;
 }
 .footer-bot{
     padding: 1rem 0;
-    color: #333;
+    color: rgb(239, 226, 226);
 }
 .footer-bot p{
     margin: 0;

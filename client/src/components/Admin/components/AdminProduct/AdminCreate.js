@@ -20,7 +20,7 @@ function AdminCreate(props) {
   const SelectList = useSelector(state => state.selectList.List)
   const { pages } = useSelector((state) => state.allProduct.product);
   const { List } = useSelector((state) => state.allTypeProduct);
-  console.log(SelectList);
+
   useEffect(() => {
     dispatch(getAllSelectList());
   }, [dispatch]);
@@ -104,7 +104,7 @@ function AdminCreate(props) {
           { SelectList && SelectList.length > 0
             ? SelectList.map((item) => (
                 <div className="select-type">
-                  <select {...register(`${item?.Property}`)}>
+                  <select {...register(`${item.property}`)}>
                     <option>{item.name}</option>
                     {item.options.map((x) => (
                       <option value={x}>{x}</option>
